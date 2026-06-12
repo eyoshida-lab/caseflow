@@ -1,0 +1,105 @@
+.app {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+.sidebar {
+  width: 200px;
+  flex-shrink: 0;
+  background: #F0EFEA;
+  border-right: 0.5px solid #E0DFD8;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+.logo {
+  padding: 16px 14px 12px;
+  border-bottom: 0.5px solid #E0DFD8;
+}
+.logoText { font-size: 14px; font-weight: 600; color: #1A1A1A; }
+.logoSub  { font-size: 10px; color: #999; margin-top: 1px; }
+
+.nav { padding: 8px 0; flex: 1; }
+.navLabel {
+  font-size: 10px;
+  font-weight: 600;
+  color: #AAA;
+  padding: 0 14px;
+  margin: 6px 0 3px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+.navLabelAdmin {
+  font-size: 10px;
+  font-weight: 600;
+  color: #BA7517;
+  padding: 0 14px;
+  margin: 10px 0 3px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border-top: 0.5px solid #E0DFD8;
+  padding-top: 10px;
+}
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 14px;
+  font-size: 13px;
+  color: #555;
+  cursor: pointer;
+  border-radius: 0;
+  transition: background .1s;
+}
+.navItem i { font-size: 15px; flex-shrink: 0; }
+.navItem span { flex: 1; }
+.navItem:hover { background: #E5E4DE; color: #1A1A1A; }
+.navItem.active { background: #fff; color: #1A1A1A; font-weight: 500; }
+.badge {
+  font-size: 10px;
+  padding: 1px 5px;
+  border-radius: 8px;
+  background: #FCEBEB;
+  color: #791F1F;
+  margin-left: auto;
+}
+
+.bottom {
+  padding: 10px;
+  border-top: 0.5px solid #E0DFD8;
+  margin-top: auto;
+}
+.currentUser {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background .1s;
+}
+.currentUser:hover { background: #E5E4DE; }
+.userAvatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+.userInfo { flex: 1; min-width: 0; }
+.userName { font-size: 12px; font-weight: 500; color: #1A1A1A; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.userRole { font-size: 10px; color: #999; }
+
+.main {
+  flex: 1;
+  overflow-y: auto;
+  background: #F7F7F8;
+  padding: 20px 24px;
+}

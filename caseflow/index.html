@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CaseFlow</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.2.0/tabler-icons.min.css" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body, #root { height: 100%; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Noto Sans JP', sans-serif; background: #F7F7F8; color: #1A1A1A; }
+    button { cursor: pointer; font-family: inherit; font-size: 13px; padding: 6px 14px; border-radius: 6px; border: 0.5px solid #D0CFC9; background: #fff; color: #333; }
+    button:hover { background: #F5F5F5; }
+    button.primary { background: #534AB7; color: #fff; border-color: #534AB7; }
+    button.primary:hover { background: #3C3489; }
+    button.danger { color: #B91C1C; border-color: #FCA5A5; }
+    button.danger:hover { background: #FEF2F2; }
+    input, select, textarea { font-family: inherit; font-size: 13px; padding: 7px 10px; border-radius: 6px; border: 0.5px solid #D0CFC9; background: #fff; color: #1A1A1A; width: 100%; outline: none; }
+    input:focus, select:focus, textarea:focus { border-color: #7F77DD; box-shadow: 0 0 0 2px #EEEDFE; }
+    textarea { resize: vertical; line-height: 1.6; }
+    label { font-size: 12px; color: #555; font-weight: 500; display: block; margin-bottom: 4px; }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="src/main.jsx"></script>
+</body>
+</html>

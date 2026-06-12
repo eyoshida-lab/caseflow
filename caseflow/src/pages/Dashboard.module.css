@@ -1,0 +1,68 @@
+.loading { text-align: center; padding: 40px; color: #888; }
+.header { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 16px; }
+.title  { font-size: 18px; font-weight: 500; color: #1A1A1A; }
+.sub    { font-size: 12px; color: #999; margin-top: 2px; }
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-bottom: 14px;
+}
+.metric {
+  background: #fff;
+  border: 0.5px solid #E0DFD8;
+  border-radius: 8px;
+  padding: 12px 14px;
+}
+.metricLabel { font-size: 11px; color: #999; margin-bottom: 4px; }
+.metricVal   { font-size: 22px; font-weight: 500; line-height: 1; }
+.metricSub   { font-size: 11px; color: #999; margin-top: 3px; }
+
+.alerts { display: flex; flex-direction: column; gap: 6px; margin-bottom: 14px; }
+.alert  { display: flex; align-items: center; gap: 8px; padding: 8px 12px; border-radius: 6px; font-size: 12px; cursor: pointer; }
+.alert i { font-size: 14px; flex-shrink: 0; }
+.alert span:nth-child(2) { flex: 1; }
+.alertDanger { background: #FCEBEB; color: #791F1F; border: 0.5px solid #FCA5A5; }
+.alertWarn   { background: #FAEEDA; color: #633806; border: 0.5px solid #FCD34D; }
+.alertLink   { font-size: 11px; text-decoration: underline; opacity: .7; }
+
+.listHeader { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+.listTitle  { font-size: 13px; font-weight: 500; }
+.filters    { display: flex; gap: 4px; }
+.chip   { font-size: 11px; padding: 3px 10px; border-radius: 20px; }
+.chipOn { font-size: 11px; padding: 3px 10px; border-radius: 20px; background: #EEEDFE; border-color: #AFA9EC; color: #3C3489; font-weight: 500; }
+
+.table { background: #fff; border: 0.5px solid #E0DFD8; border-radius: 8px; overflow: hidden; }
+.tableHead {
+  display: grid;
+  grid-template-columns: minmax(0,2.5fr) minmax(0,1.2fr) minmax(0,1fr) minmax(0,0.7fr) minmax(0,0.9fr);
+  gap: 8px;
+  padding: 7px 14px;
+  font-size: 11px;
+  color: #AAA;
+  background: #F9F9F7;
+  border-bottom: 0.5px solid #E0DFD8;
+}
+.row {
+  display: grid;
+  grid-template-columns: minmax(0,2.5fr) minmax(0,1.2fr) minmax(0,1fr) minmax(0,0.7fr) minmax(0,0.9fr);
+  gap: 8px;
+  padding: 10px 14px;
+  border-bottom: 0.5px solid #F0F0EA;
+  cursor: pointer;
+  align-items: center;
+  transition: background .1s;
+}
+.row:last-child { border-bottom: none; }
+.row:hover { background: #F9F9F7; }
+.caseName   { font-size: 13px; font-weight: 500; color: #1A1A1A; }
+.caseClient { font-size: 11px; color: #999; margin-top: 1px; }
+.badge { display: inline-block; font-size: 10px; padding: 2px 8px; border-radius: 10px; font-weight: 500; }
+.assignee { font-size: 12px; color: #555; }
+.due { font-size: 12px; }
+.progress { display: flex; align-items: center; gap: 6px; }
+.progressBar  { flex: 1; height: 4px; background: #EEE; border-radius: 2px; overflow: hidden; }
+.progressFill { height: 100%; border-radius: 2px; transition: width .3s; }
+.progressPct  { font-size: 10px; color: #AAA; min-width: 26px; text-align: right; }
+.empty { padding: 24px; text-align: center; color: #AAA; font-size: 13px; }

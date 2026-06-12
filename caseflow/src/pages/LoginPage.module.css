@@ -1,0 +1,96 @@
+.wrap {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F7F7F8;
+  padding: 20px;
+}
+.card {
+  background: #fff;
+  border-radius: 12px;
+  border: 0.5px solid #E0DFD8;
+  padding: 32px 28px;
+  width: 100%;
+  max-width: 440px;
+  box-shadow: 0 2px 12px rgba(0,0,0,.06);
+}
+.icon {
+  text-align: center;
+  font-size: 32px;
+  color: #7F77DD;
+  margin-bottom: 12px;
+}
+.title {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  color: #1A1A1A;
+  margin-bottom: 4px;
+}
+.sub {
+  font-size: 13px;
+  color: #888;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.userBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 14px 10px;
+  border: 0.5px solid #E0DFD8;
+  border-radius: 10px;
+  background: #fff;
+  cursor: pointer;
+  transition: border-color .15s;
+  width: 100%;
+}
+.userBtn:hover { border-color: #7F77DD; }
+.selected { border: 2px solid #7F77DD !important; background: #EEEDFE !important; }
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 600;
+}
+.name  { font-size: 13px; font-weight: 500; color: #1A1A1A; }
+.role  { font-size: 11px; color: #888; }
+.adminBadge {
+  font-size: 10px;
+  padding: 2px 7px;
+  border-radius: 10px;
+  background: #FAEEDA;
+  color: #633806;
+}
+.loginBtn {
+  width: 100%;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.loginBtn:disabled {
+  background: #E5E5E5 !important;
+  color: #999 !important;
+  border-color: #E5E5E5 !important;
+  cursor: default;
+}
+.note {
+  font-size: 11px;
+  color: #AAA;
+  text-align: center;
+}
+.loading { text-align: center; color: #888; padding: 20px 0; }
+.error   { text-align: center; color: #B91C1C; padding: 8px; background: #FEF2F2; border-radius: 6px; }
