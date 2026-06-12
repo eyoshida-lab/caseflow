@@ -130,8 +130,7 @@ export default function AppShell({ user, onSwitchUser, onLogout }) {
 // ユーザー切り替えパネル
 function UserSwitchPanel({ currentUserId, onSelect, onClose }) {
   const [users, setUsers] = useState([]);
-  const { UserAPI } = require('../api.js');
-
+  
   useState(() => {
     import('../api.js').then(m => m.UserAPI.getAll().then(setUsers));
   }, []);
